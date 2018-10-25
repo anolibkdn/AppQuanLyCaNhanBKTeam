@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupPage">
+
+    <LinearLayout
+        android:background="@drawable/custom_signup_linear"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <TextView
+                android:textColor="@color/colorBlue1"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:text="@string/sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:textSize="15dp"
+                android:paddingLeft="10dp"
+                android:textStyle="normal"
+                android:layout_marginTop="55dp"
+                android:id="@+id/E_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textEmailSubject"
+                android:background="@drawable/custom_edittext_signup"
+                android:hint="Email"
+                android:fontFamily="sans-serif"
+                />
+
+            <EditText
+                android:textSize="15dp"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/E_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:background="@drawable/custom_edittext_signup"
+                android:hint="Password"/>
+
+            <EditText
+                android:textSize="15dp"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext_signup"
+                android:hint="Confirm"
+                android:id="@+id/E_confermPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textPassword"/>
+
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_button_signup"
+                android:layout_gravity="center"
+                android:text="@string/sign_up"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textColor="@color/colorWhite"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:background="@color/colorBlue1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="@string/sign_up_social"
+                android:textStyle="normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:src="@drawable/icons8_facebook_24"/>
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:src="@drawable/icons8_google_plus_24"/>
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:src="@drawable/icons8_instagram_24"/>
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:src="@drawable/icons8_twitter_24"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
