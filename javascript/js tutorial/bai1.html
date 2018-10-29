@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bai tap 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div>
+        <script>
+            var Thuong = ['a','b','c','d','e','f','g','h','i','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+            
+            var Hoa = ['A','B','C','D','E','F','G','H','I','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+
+            let toUpperCase = (data) => {
+                var result = ""
+                for (let index = 0; index < data.length; index++) {
+                    if (data[index] >= 'a' && data[index] <= 'z') {
+                        for (let index1 = 0; index1 < 25; index1++) {
+                            if(data[index] == Thuong[index1])
+                                result += Hoa[index1]
+                        }
+                    }else result += data[index]
+                }
+                console.log(result)
+                return result;
+
+            }
+
+            let toLowerCase = (data) => {
+                var result = ""
+                for (let index = 0; index < data.length; index++) {
+                    if (data[index] >= 'A' && data[index] <= 'Z') {
+                        for (let index1 = 0; index1 < 25; index1++) {
+                            if(data[index] == Hoa[index1])
+                                result += Thuong[index1]
+                        }
+                    }else result += data[index]
+                }
+                console.log(result)
+                return result;
+
+            }
+
+            let hoaThuong= (data)=>{
+                var result = ""
+                for (let index = 0; index < data.length; index++) {
+                    if(index%2==0){
+                        if(data[index] >= 'A' && data[index] <= 'Z'){
+                            for (let index1 = 0; index1 < 25; index1++) {
+                                if(data[index]==Hoa[index1]){
+                                    result += Thuong[index1]
+                                }
+                            }
+                        }else result += data[index] 
+                    }else result += data[index]
+                    
+                }return result
+            }
+
+            let nguyenam = (data) =>{
+                var ngam = ['U','E','O','A','I']
+                var ngam1 = ['u','e','o','a','i']
+                let result = ""
+                for (let index = 0; index < data.length; index++) {
+                    for (let index1 = 0;index1 < 5; index1++) {
+                        if(data[index] == ngam[index1]) result += data[index]
+                        if(data[index] == ngam1[index1]) result += data[index]
+                    }
+                }return result
+            }
+            let sotu = (data) =>{
+                let result = 0
+                for (let index = 0; index < data.length; index++) {
+                    if(data[index-1]!=' '&& data[index] !=' ' && data[index+1]==' ') result+=1
+                }return result
+
+            }
+            let handlestring = () => {
+                let data = document.getElementById("t1").value;
+                document.getElementById("t2").value = toUpperCase(data)
+                document.getElementById("t3").value = hoaThuong(toUpperCase(data))
+                document.getElementById("t4").value = nguyenam(data)
+                document.getElementById("t5").value = sotu(data)+ 1
+            }
+
+
+        </script>
+        <form action="" method="post">
+            <label for="" style="text-align: center;">Xử lý chuỗi</label>
+            <table>
+                <tr>
+                    <td>
+                        <span>Nhập chuỗi</span>
+                    </td>
+                    <td>
+                        <input type="text" name="" id="t1">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Chữ hoa</span>
+                    </td>
+                    <td>
+                        <input type="text" name="" id="t2">
+                        <input type="button" value="OK" onclick="handlestring()">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Thường hoa</span>
+                    </td>
+                    <td>
+                        <input type="text" name="" id="t3">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Các nguyên âm</span>
+                    </td>
+                    <td>
+                        <input type="text" name="" id="t4">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Số từ</span>
+                    </td>
+                    <td>
+                        <input type="number" name="" id="t5">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

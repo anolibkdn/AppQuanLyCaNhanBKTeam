@@ -8,14 +8,15 @@ import android.widget.LinearLayout;
 
 public class MaterialCollapsingPage extends AppCompatActivity {
 
-    private LinearLayout profile_page,analysis_page;
-    private Intent intent_profile, intent_analysis;
+    private LinearLayout profile_page,analysis_page, setting_page;
+    private Intent intent_profile, intent_analysis , intent_setting;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_material_collapsing_page);
 
+        setting_page = findViewById(R.id.settingbutton);
         profile_page = findViewById(R.id.profile_home);
         analysis_page = findViewById(R.id.analysis_page);
 
@@ -33,6 +34,14 @@ public class MaterialCollapsingPage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(intent_analysis);
+            }
+        });
+
+        intent_setting = new Intent(this, SettingPage.class);
+        setting_page.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(intent_setting);
             }
         });
 

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>js tutorial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <!-- 
+
+        js output:
+            .writing into an html element, using innerHTML
+            .writing into the html output using document.write()
+            .writing into an alert box, using window.alert()
+            .writing into the brower console, using console.log()
+
+        *********************************************************
+
+
+     -->
+    <h1>My first web page</h1>
+    <p>My first paragraph</p>
+
+    <h3>Click to using innerHTML() method: </h3>
+    <button onclick="demo()" style="width: 100px;height: 40px;background-color: brown; color: white;">Click</button>
+    <p id="innerhtml"></p>
+
+    <h3>Click to using document.write() method: </h3>
+    <button onclick="demo1()" style="width: 100px;height: 40px;background-color: brown; color: white;">Click</button>
+
+    <h3>Click to using window.alert() method: </h3>
+    <button onclick="demo2()" style="width: 100px;height: 40px;background-color: brown; color: white;">Click</button>
+
+    <h3>Click to using console.log() method: </h3>
+    <button onclick="demo3()" style="width: 100px;height: 40px;background-color: brown; color: white;">Click</button>
+
+    <h3>Click to check result of function: </h3>
+    <p id="demo4"></p>
+    <button onclick="demo4(1,2)" style="width: 100px;height: 40px;background-color: brown; color: white;">Click</button>
+
+    <h3>Click to check result of object: </h3>
+    <button onclick="checkobj()" style="width: 100px;height: 40px;background-color: brown; color: white;">Click</button>
+
+    <h3>Click to check result of object string: </h3>
+    <button onclick="show_string()" style="width: 100px;height: 40px;background-color: brown; color: white;">Click</button>
+
+    <h3>Click to check result of object number: </h3>
+    <button onclick="num()" style="width: 100px;height: 40px;background-color: brown; color: white;">Click</button>
+
+    <h3>Click to check result of Infinity Value: </h3>
+    <button onclick="InfinityValue()" style="width: 100px;height: 40px;background-color: brown; color: white;">Click</button>
+</body>
+
+</html>

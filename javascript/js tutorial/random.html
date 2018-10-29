@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="random.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>random</title>
+</head>
+
+<body>
+    <div>
+        <h1 id="number" style="font-size: 200px;">0</h1>
+        <button onclick="randomlist()">Start</button>
+        <button onclick="result()">Stop</button>
+        <p>Result: </p>
+        <br>
+        <h1 id="result"></h1>
+    </div>
+    <div>
+        <h1 id="counter">00:00</h1>
+    </div>
+    <div>
+        <form action="" name="from1">
+            <table>
+                <tr>
+                    <td><label for="">Enter your minite: </label></td>
+                    <td><input type="text" placeholder="1 minute" name="minute" id="minute" value=""></td>
+                </tr>
+            </table>
+        </form>
+        <button onclick="counter()">Start</button>
+    </div>
+</body>
+
+</html>

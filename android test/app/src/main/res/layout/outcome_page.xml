@@ -3,4 +3,133 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/linechartoutcome"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"></com.github.mikephil.charting.charts.LineChart>
+
+        <LinearLayout
+            android:padding="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/custom_edittext_info"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <ImageButton
+                    android:background="@drawable/custom_btn_income"
+                    android:src="@drawable/ic_assignment_ind_black_24dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+                <ImageButton
+                    android:background="@drawable/custom_btn_income"
+                    android:src="@drawable/ic_assignment_ind_black_24dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/custom_edittext_info"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <ImageButton
+                    android:background="@drawable/custom_btn_income"
+                    android:src="@drawable/ic_assignment_ind_black_24dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+                <ImageButton
+                    android:background="@drawable/custom_btn_income"
+                    android:src="@drawable/ic_assignment_ind_black_24dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/custom_edittext_info"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:background="@drawable/custom_btn_income"
+                    android:src="@drawable/ic_assignment_ind_black_24dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/ListChoose"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+
+        </LinearLayout>
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

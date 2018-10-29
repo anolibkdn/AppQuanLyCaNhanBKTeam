@@ -1,0 +1,30 @@
+body{
+    background: #343434;
+    color: white;
+    margin: auto;
+}
+div{
+    margin: auto;
+}
+h3{
+    color: aqua;
+}
+
+button{
+    width: 100px;
+    height: 40px;
+    background: #B22222;
+    color: #ffffff;
+    margin: 50px;
+}
+
+h1#number {
+    margin: 0px;
+    text-align: center;
+}
+
+h1#result {
+    margin: 0px;
+    text-align: center;
+    font-size: 100px;
+}

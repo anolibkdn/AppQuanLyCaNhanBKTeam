@@ -1,0 +1,3 @@
+0
+home|n|nha|this is my home|home|
+horse|n|ngua|my horse will win in this rating competion|anamal|

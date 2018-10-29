@@ -20,9 +20,9 @@ public class MainActivity extends AppCompatActivity {
 
         //them menu trang cho tab
 
-        tabLayout.addTab(tabLayout.newTab().setText("Analysis"));
-        tabLayout.addTab(tabLayout.newTab().setText("Income"));
-        tabLayout.addTab(tabLayout.newTab().setText("Outcome"));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_equalizer_black_24dp));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_attach_money_black_24dp));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_add_shopping_cart_black_24dp));
 
 
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);

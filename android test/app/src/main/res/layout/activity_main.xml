@@ -24,7 +24,7 @@
             android:id="@+id/tabLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#1db995">
+            android:background="@color/colorBlue1">
         </android.support.design.widget.TabLayout>
 
     </LinearLayout>

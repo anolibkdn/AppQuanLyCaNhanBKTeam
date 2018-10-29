@@ -127,6 +127,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/settingbutton"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -158,11 +159,63 @@
         </LinearLayout>
 
 
-        <android.support.design.widget.AppBarLayout
-            android:layout_width="match_parent"
-            android:layout_height="30dp">
+        <!--<android.support.design.widget.AppBarLayout-->
+            <!--android:theme="@style/Theme.AppCompat.Light"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="30dp">-->
 
-        </android.support.design.widget.AppBarLayout>
+        <!--</android.support.design.widget.AppBarLayout>-->
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:background="@color/colorBlue1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="Manager your wallet"
+                android:textStyle="normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:src="@drawable/icons8_facebook_24"/>
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:src="@drawable/icons8_google_plus_24"/>
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:src="@drawable/icons8_instagram_24"/>
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:src="@drawable/icons8_twitter_24"/>
+            </LinearLayout>
+
+        </LinearLayout>
 
 
     </LinearLayout>

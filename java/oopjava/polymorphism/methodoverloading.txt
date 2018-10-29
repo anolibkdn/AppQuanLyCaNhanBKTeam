@@ -1,0 +1,4 @@
+if a class has miltiple method having same name but diffrent in parameter,
+it's known as method overloading
+
+

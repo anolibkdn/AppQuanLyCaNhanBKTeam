@@ -28,14 +28,14 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".MaterialCollapsingPage" />
+        <activity android:name=".MaterialCollapsingPage" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity android:name=".EnterInfoPage" />
         <activity
             android:name=".SigninPage"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
 
         </activity>
-        <activity android:name=".SettingPage">
+        <activity android:name=".SettingPage" android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
         </activity>
     </application>

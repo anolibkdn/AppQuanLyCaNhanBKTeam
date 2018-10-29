@@ -42,10 +42,10 @@ public class AnalysisPage extends Fragment
         mChart = homeview.findViewById(R.id.piechart_data);
         mChart.setRotationEnabled(true);
         mChart.setDescription(new Description());
-        mChart.setHoleRadius(35f);
+        mChart.setHoleRadius(70f);
         mChart.setTransparentCircleAlpha(0);
-        mChart.setCenterText("PieChart");
-        mChart.setCenterTextSize(10);
+        mChart.setCenterText("Analysis");
+        mChart.setCenterTextSize(20);
         mChart.setDrawEntryLabels(true);
 
         addDataSet(mChart);
@@ -83,17 +83,16 @@ public class AnalysisPage extends Fragment
         ArrayList<Integer> colors=new ArrayList<>();
         colors.add(Color.GRAY);
         colors.add(Color.GREEN);
-        colors.add(Color.RED);
+        colors.add(Color.BLUE);
         colors.add(Color.YELLOW);
         colors.add(Color.BLUE);
         colors.add(Color.MAGENTA);
-        colors.add(Color.WHITE);
+        colors.add(Color.GREEN);
 
         pieDataSet.setColors(colors);
 
         Legend legend=mChart.getLegend();
         legend.setForm(Legend.LegendForm.CIRCLE);
-//        legend.setPosition(Legend.LegendPosition.LEFT_OF_CHART);
 
         PieData pieData=new PieData(pieDataSet);
         mChart.setData(pieData);

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>opp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!-- <script src="ex1.js"></script> -->
+</head>
+<body>
+    <form action="" method="get">
+        <table>
+            <tr>
+                <td><label for="">Full name</label> <input type="text" name="" id="name" placeholder="Full name" value="" onblur="chuhoa()"></td>
+                <td><label for="">Hometown</label> <input type="text" name="" id="" placeholder="Your hometown"></td>
+            </tr>
+
+            <script>
+                function chuhoa(){
+                    let name = document.getElementById("name").value;
+                    document.getElementById("name").value = name.toUpperCase();
+                    // alert(name);
+                }
+            </script>
+            <tr>
+                <td><label for="">Address</label> <input type="text" name="" id="" placeholder="Address"></td>
+                <td><label for="">Image</label> <input type="file" name="" id=""></td>
+            </tr>
+            <tr>
+                <td><label for="">Sex</label></td>
+                <td>
+                    <input type="radio" name="sex" id=""><label for="">Male</label>
+                    <input type="radio" name="sex" id=""><label for="">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Date: </label>
+                    <select name="" id="date">
+                        <option value="1"></option>
+                    </select>   
+                </td>
+                <td><label for="">Month: </label>
+                    <select name="" id="month"></select>
+                </td>
+                <td>
+                    <label for="">Year: </label>
+                    <select name="" id="year"></select>
+                </td>
+
+                <script>
+                    let date  = 31;
+                    var month = 12;     
+                    let option  = "";
+                    for (let index = 1; index <= date; index++) {
+                        let count = index;
+                        option += '<option value="">'+count +'</option>';
+                    }
+                    document.getElementById("date").innerHTML = option;
+
+                    //month
+                    option = "";
+                    for (let index = 0; index < month; index++) {
+                        let count = index + 1;
+                        option += '<option value="">'+count +'</option>';
+                    }
+                    document.getElementById("month").innerHTML = option;
+
+                    //year
+                    option = "";
+                    for (let index = 1900; index < 2018; index++) {
+                        let count = index;
+                        option += '<option value="">'+count +'</option>';
+                    }
+                    document.getElementById("year").innerHTML = option;
+
+                    let chon = ()=>{
+                        let a = document.getElementById("date").selectedIndex;
+                        alert(a);
+                    }
+
+                </script>
+            </tr>
+            <tr>
+                <td><label for="">Level: </label></td>
+                <td><input type="text" name="" id="" placeholder="Your level"></td>
+            </tr>
+            <tr>
+                <td><label for="">Note: </label></td>
+                <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Ok" onclick="chuhoa(); chon()"></td>
+                <td><input type="reset" value="Reset"></td>
+                <td><input type="button" value="Cancel"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -8,4 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="button1">
+        <item name="android:imageButtonStyle">@drawable/ic_vpn_key_black_24dp</item>
+        <item name="android:background">@drawable/custom_signup_linear</item>
+    </style>
 </resources>

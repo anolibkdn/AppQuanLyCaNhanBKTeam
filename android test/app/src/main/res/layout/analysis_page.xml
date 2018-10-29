@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorWhite2"
     tools:context=".AnalysisPage">
 
     <LinearLayout
@@ -10,89 +11,137 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.github.mikephil.charting.charts.PieChart
-            android:layout_marginTop="10dp"
-            android:id="@+id/piechart_data"
-            android:layout_width="match_parent"
-            android:layout_height="300dp">
-
-        </com.github.mikephil.charting.charts.PieChart>
 
         <LinearLayout
-            android:layout_margin="5dp"
-            android:layout_marginTop="10dp"
-            android:background="@color/colorWhite2"
-            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_signup_linear"
+            android:layout_weight="1"
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="80dp">
+            android:layout_height="match_parent">
+            <com.github.mikephil.charting.charts.PieChart
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/piechart_data"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+            </com.github.mikephil.charting.charts.PieChart>
 
             <LinearLayout
-                android:layout_weight="1"
-                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="80dp">
 
-                <TextView
-                    android:textColor="@color/colorBlue1"
-                    android:textStyle="bold"
-                    android:textSize="20dp"
-                    android:gravity="center"
-                    android:layout_weight="1"
-                    android:text="12345"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-                <TextView
-                    android:gravity="center"
-                    android:text="sum"
-                    android:layout_weight="2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
 
-                <TextView
-                    android:textColor="@color/colorBlue1"
-                    android:textStyle="bold"
-                    android:textSize="20dp"
-                    android:gravity="center"
+                <LinearLayout
                     android:layout_weight="1"
-                    android:text="12345"
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-                <TextView
-                    android:gravity="center"
-                    android:text="sum"
-                    android:layout_weight="2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    android:layout_height="match_parent">
 
-                <TextView
-                    android:textColor="@color/colorBlue1"
-                    android:textStyle="bold"
-                    android:textSize="20dp"
-                    android:gravity="center"
+                    <View
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/colorBlue3"
+                        />
+
+                    <TextView
+                        android:textColor="@color/colorBlue1"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="12345"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:gravity="center"
+                        android:text="sum"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <LinearLayout
                     android:layout_weight="1"
-                    android:text="12345"
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-                <TextView
-                    android:gravity="center"
-                    android:text="sum"
-                    android:layout_weight="2"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/colorBlue2"
+                        />
+                    <TextView
+                        android:textColor="@color/colorBlue1"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="12345"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:gravity="center"
+                        android:text="sum"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/colorBlue1"
+                        />
+                    <TextView
+                        android:textColor="@color/colorBlue1"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="12345"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:gravity="center"
+                        android:text="sum"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlue3"
+            android:text="Detail"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_signup_linear"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

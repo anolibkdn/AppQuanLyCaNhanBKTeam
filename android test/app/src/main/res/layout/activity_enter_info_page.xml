@@ -7,7 +7,7 @@
     tools:context=".EnterInfoPage">
 
     <LinearLayout
-        android:background="@drawable/custom_signup_linear"
+        android:background="@drawable/custom_edittext_info"
         android:layout_margin="20dp"
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -205,28 +205,28 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
             </LinearLayout>
-            <LinearLayout
-                android:layout_marginTop="2dp"
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="30dp">
+            <!--<LinearLayout-->
+                <!--android:layout_marginTop="2dp"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp">-->
 
-                <ImageView
-                    android:layout_weight="3"
-                    android:src="@drawable/ic_business_center_black_24dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                <!--<ImageView-->
+                    <!--android:layout_weight="3"-->
+                    <!--android:src="@drawable/ic_business_center_black_24dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent" />-->
 
-                <EditText
-                    android:paddingLeft="10dp"
-                    android:textSize="13dp"
-                    android:hint="Your Job"
-                    android:background="@drawable/custom_edittext_info"
+                <!--<EditText-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:textSize="13dp"-->
+                    <!--android:hint="Your Job"-->
+                    <!--android:background="@drawable/custom_edittext_info"-->
 
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </LinearLayout>
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent" />-->
+            <!--</LinearLayout>-->
         </LinearLayout>
 
 

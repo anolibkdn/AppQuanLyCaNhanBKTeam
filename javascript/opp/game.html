@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="game.js"></script>
+    <style>
+        #frame {
+            width: 100%;
+            height: 800px;
+            border: solid 1px rosybrown;
+            background-image: url(bg.png)
+        }
+        
+        #bird {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        .pipe{
+            width: 60%;
+            height: 60%;
+        }
+
+        #pipeup{
+            position: absolute;
+            top: -30%;
+            right: 10%;
+        }
+        #pipedown{
+            position: absolute;
+            top: 60%;
+            right: 10%;
+        }
+    </style>
+
+    <script>
+        
+        var bird = {
+            x: 400,
+            y: 400,
+            speed: 5,
+            up: function () {
+                this.y -= this.speed;
+                return this.y;
+            },
+            down: function () {
+                this.y += this.speed;
+                return this.y;
+            },
+            stop: function () {
+                this.speed = 0;
+            }
+        };
+
+        var delay = (time) => {
+            setInterval(() => { let a = 0; }, time);
+        }
+
+        let flyingup = (status) => {
+
+            if (status == 38) {
+                bird.speed = 10;
+                document.getElementById("bird").style.top = bird.up().toString() + "px";
+                console.log(bird.y);
+                console.log(status);
+                status = 41;
+            }
+
+        }
+        let flyingdown = setInterval(() => {
+            bird.speed *= 2;
+            document.getElementById("bird").style.top = bird.down().toString() + "px";
+            if (bird.y > 600)
+                clearInterval(flyingdown);
+        }, 200);
+
+        let k_key = (event) => {
+            let kCode = event.keyCode || event.which;
+            console.log(kCode);
+            flyingup(kCode);
+        }
+
+        document.onkeydown = (event) => {
+            k_key(event);
+        }
+
+        window.onload = function (e) {
+            document.getElementById("bird").style.top = bird.y.toString() + "px";
+            document.getElementById("bird").style.left = bird.x.toString() + "px";
+        };
+
+
+
+    </script>
+</head>
+
+<body>
+    <div id="frame">
+        <!-- <img src="bg.png" alt=""> -->
+        <img src="flappy-bird.png" alt="" id="bird">
+        <img class="pipe" id="pipeup" src="pipe1.png" alt="">
+        <img class="pipe" id="pipedown" src="pipe.png" alt="">
+    </div>
+</body>
+
+</html>
